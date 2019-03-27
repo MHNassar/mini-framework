@@ -7,10 +7,8 @@ namespace Composer\Autoload;
 class ComposerStaticInit71a58fa226a73bdb5bf46d762b01ae1a
 {
     public static $files = array (
-        'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
-        'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
-        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -22,19 +20,9 @@ class ComposerStaticInit71a58fa226a73bdb5bf46d762b01ae1a
         array (
             'Webmozart\\Assert\\' => 17,
         ),
-        'V' => 
+        'S' => 
         array (
-            'Valitron\\' => 9,
-        ),
-        'P' => 
-        array (
-            'Psr\\Http\\Message\\' => 17,
-        ),
-        'G' => 
-        array (
-            'GuzzleHttp\\Psr7\\' => 16,
-            'GuzzleHttp\\Promise\\' => 19,
-            'GuzzleHttp\\' => 11,
+            'Symfony\\Polyfill\\Ctype\\' => 23,
         ),
         'D' => 
         array (
@@ -54,25 +42,9 @@ class ComposerStaticInit71a58fa226a73bdb5bf46d762b01ae1a
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
         ),
-        'Valitron\\' => 
+        'Symfony\\Polyfill\\Ctype\\' => 
         array (
-            0 => __DIR__ . '/..' . '/vlucas/valitron/src/Valitron',
-        ),
-        'Psr\\Http\\Message\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-        ),
-        'GuzzleHttp\\Psr7\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
-        ),
-        'GuzzleHttp\\Promise\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/guzzlehttp/promises/src',
-        ),
-        'GuzzleHttp\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
+            0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
         'Doctrine\\Instantiator\\' => 
         array (
@@ -95,12 +67,30 @@ class ComposerStaticInit71a58fa226a73bdb5bf46d762b01ae1a
     );
 
     public static $classMap = array (
-        'AuthController' => __DIR__ . '/../..' . '/application/controllers/AuthController.php',
-        'AuthModel' => __DIR__ . '/../..' . '/application/models/AuthModel.php',
-        'Connection' => __DIR__ . '/../..' . '/core/database/Connection.php',
-        'Controller' => __DIR__ . '/../..' . '/core/lib/Controller.php',
-        'JsonOutput' => __DIR__ . '/../..' . '/core/helpers/JsonOutput.php',
-        'Model' => __DIR__ . '/../..' . '/core/lib/Model.php',
+        'App\\Controllers\\IndexController' => __DIR__ . '/../..' . '/App/Controllers/IndexController.php',
+        'App\\Controllers\\RecipesController' => __DIR__ . '/../..' . '/App/Controllers/RecipesController.php',
+        'App\\Middlewares\\AuthMiddleware' => __DIR__ . '/../..' . '/App/Middlewares/AuthMiddleware.php',
+        'Core\\Config' => __DIR__ . '/../..' . '/Core/Config.php',
+        'Core\\Controller' => __DIR__ . '/../..' . '/Core/Controller.php',
+        'Core\\Database\\Connection\\Connection' => __DIR__ . '/../..' . '/Core/Database/Connection/Connection.php',
+        'Core\\Database\\Connection\\IConnection' => __DIR__ . '/../..' . '/Core/Database/Connection/IConnection.php',
+        'Core\\Database\\Models\\Model' => __DIR__ . '/../..' . '/Core/Database/Models/Model.php',
+        'Core\\Database\\Query\\DeleteQueryTrait' => __DIR__ . '/../..' . '/Core/Database/Query/Traits/DeleteQueryTrait.php',
+        'Core\\Database\\Query\\InsertQueryTrait' => __DIR__ . '/../..' . '/Core/Database/Query/Traits/InsertQueryTrait.php',
+        'Core\\Database\\Query\\QueryBuilder\\IQueryFactory' => __DIR__ . '/../..' . '/Core/Database/Query/QueryBuilder/IQueryFactory.php',
+        'Core\\Database\\Query\\QueryBuilder\\QueryFactory' => __DIR__ . '/../..' . '/Core/Database/Query/QueryBuilder/QueryFactory.php',
+        'Core\\Database\\Query\\SQLQuery\\DeleteQuery' => __DIR__ . '/../..' . '/Core/Database/Query/SQLQuery/DeleteQuery.php',
+        'Core\\Database\\Query\\SQLQuery\\InsertQuery' => __DIR__ . '/../..' . '/Core/Database/Query/SQLQuery/InsertQuery.php',
+        'Core\\Database\\Query\\SQLQuery\\Query' => __DIR__ . '/../..' . '/Core/Database/Query/SQLQuery/Query.php',
+        'Core\\Database\\Query\\SQLQuery\\SelectQuery' => __DIR__ . '/../..' . '/Core/Database/Query/SQLQuery/SelectQuery.php',
+        'Core\\Database\\Query\\SQLQuery\\UpdateQuery' => __DIR__ . '/../..' . '/Core/Database/Query/SQLQuery/UpdateQuery.php',
+        'Core\\Database\\Query\\SelectQueryTrait' => __DIR__ . '/../..' . '/Core/Database/Query/Traits/SelectQueryTrait.php',
+        'Core\\Database\\Query\\UpdateQueryTrait' => __DIR__ . '/../..' . '/Core/Database/Query/Traits/UpdateQueryTrait.php',
+        'Core\\Helpers\\Request' => __DIR__ . '/../..' . '/Core/Helpers/RequestHandler.php',
+        'Core\\Middleware' => __DIR__ . '/../..' . '/Core/Middleware.php',
+        'Core\\Router' => __DIR__ . '/../..' . '/Core/Router.php',
+        'Core\\View' => __DIR__ . '/../..' . '/Core/View.php',
+        'JsonOutput' => __DIR__ . '/../..' . '/Core/Helpers/JsonOutput.php',
         'PHPUnit\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert.php',
         'PHPUnit\\Framework\\AssertionFailedError' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/AssertionFailedError.php',
@@ -197,6 +187,8 @@ class ComposerStaticInit71a58fa226a73bdb5bf46d762b01ae1a
         'PHPUnit\\Framework\\MockObject\\Matcher\\Parameters' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/MockObject/Matcher/Parameters.php',
         'PHPUnit\\Framework\\MockObject\\Matcher\\StatelessInvocation' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/MockObject/Matcher/StatelessInvocation.php',
         'PHPUnit\\Framework\\MockObject\\MockBuilder' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/MockObject/MockBuilder.php',
+        'PHPUnit\\Framework\\MockObject\\MockMethod' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/MockObject/MockMethod.php',
+        'PHPUnit\\Framework\\MockObject\\MockMethodSet' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/MockObject/MockMethodSet.php',
         'PHPUnit\\Framework\\MockObject\\MockObject' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/MockObject/ForwardCompatibility/MockObject.php',
         'PHPUnit\\Framework\\MockObject\\RuntimeException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/MockObject/Exception/RuntimeException.php',
         'PHPUnit\\Framework\\MockObject\\Stub' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/MockObject/Stub.php',
@@ -237,6 +229,7 @@ class ComposerStaticInit71a58fa226a73bdb5bf46d762b01ae1a
         'PHPUnit\\Runner\\AfterSuccessfulTestHook' => __DIR__ . '/..' . '/phpunit/phpunit/src/Runner/Hook/AfterSuccessfulTestHook.php',
         'PHPUnit\\Runner\\AfterTestErrorHook' => __DIR__ . '/..' . '/phpunit/phpunit/src/Runner/Hook/AfterTestErrorHook.php',
         'PHPUnit\\Runner\\AfterTestFailureHook' => __DIR__ . '/..' . '/phpunit/phpunit/src/Runner/Hook/AfterTestFailureHook.php',
+        'PHPUnit\\Runner\\AfterTestHook' => __DIR__ . '/..' . '/phpunit/phpunit/src/Runner/Hook/AfterTestHook.php',
         'PHPUnit\\Runner\\AfterTestWarningHook' => __DIR__ . '/..' . '/phpunit/phpunit/src/Runner/Hook/AfterTestWarningHook.php',
         'PHPUnit\\Runner\\BaseTestRunner' => __DIR__ . '/..' . '/phpunit/phpunit/src/Runner/BaseTestRunner.php',
         'PHPUnit\\Runner\\BeforeFirstTestHook' => __DIR__ . '/..' . '/phpunit/phpunit/src/Runner/Hook/BeforeFirstTestHook.php',
@@ -290,6 +283,7 @@ class ComposerStaticInit71a58fa226a73bdb5bf46d762b01ae1a
         'PHPUnit\\Util\\TestDox\\XmlResultPrinter' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/TestDox/XmlResultPrinter.php',
         'PHPUnit\\Util\\TextTestListRenderer' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/TextTestListRenderer.php',
         'PHPUnit\\Util\\Type' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Type.php',
+        'PHPUnit\\Util\\XdebugFilterScriptGenerator' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/XdebugFilterScriptGenerator.php',
         'PHPUnit\\Util\\Xml' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Xml.php',
         'PHPUnit\\Util\\XmlTestListRenderer' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/XmlTestListRenderer.php',
         'PHPUnit_Framework_MockObject_MockObject' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/MockObject/MockObject.php',
@@ -532,15 +526,7 @@ class ComposerStaticInit71a58fa226a73bdb5bf46d762b01ae1a
         'PharIo\\Version\\VersionConstraintParser' => __DIR__ . '/..' . '/phar-io/version/src/VersionConstraintParser.php',
         'PharIo\\Version\\VersionConstraintValue' => __DIR__ . '/..' . '/phar-io/version/src/VersionConstraintValue.php',
         'PharIo\\Version\\VersionNumber' => __DIR__ . '/..' . '/phar-io/version/src/VersionNumber.php',
-        'RateController' => __DIR__ . '/../..' . '/application/controllers/RateController.php',
-        'RateModel' => __DIR__ . '/../..' . '/application/models/RateModel.php',
-        'RatingValidator' => __DIR__ . '/../..' . '/application/Validators/RatingValidator.php',
-        'RecipeModel' => __DIR__ . '/../..' . '/application/models/RecipeModel.php',
-        'RecipesController' => __DIR__ . '/../..' . '/application/controllers/RecipesController.php',
-        'RecipesValidator' => __DIR__ . '/../..' . '/application/Validators/RecipesValidator.php',
-        'RequestHandler' => __DIR__ . '/../..' . '/core/helpers/RequestHandler.php',
-        'Responses' => __DIR__ . '/../..' . '/core/helpers/Responses.php',
-        'Router' => __DIR__ . '/../..' . '/core/lib/Router.php',
+        'Responses' => __DIR__ . '/../..' . '/Core/Helpers/Responses.php',
         'SebastianBergmann\\CodeCoverage\\CodeCoverage' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/CodeCoverage.php',
         'SebastianBergmann\\CodeCoverage\\CoveredCodeNotExecutedException' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Exception/CoveredCodeNotExecutedException.php',
         'SebastianBergmann\\CodeCoverage\\Driver\\Driver' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Driver/Driver.php',
@@ -649,8 +635,7 @@ class ComposerStaticInit71a58fa226a73bdb5bf46d762b01ae1a
         'TheSeer\\Tokenizer\\TokenCollectionException' => __DIR__ . '/..' . '/theseer/tokenizer/src/TokenCollectionException.php',
         'TheSeer\\Tokenizer\\Tokenizer' => __DIR__ . '/..' . '/theseer/tokenizer/src/Tokenizer.php',
         'TheSeer\\Tokenizer\\XMLSerializer' => __DIR__ . '/..' . '/theseer/tokenizer/src/XMLSerializer.php',
-        'Validator' => __DIR__ . '/../..' . '/core/helpers/Validator.php',
-        'View' => __DIR__ . '/../..' . '/core/lib/View.php',
+        'Validator' => __DIR__ . '/../..' . '/Core/Helpers/Validator.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

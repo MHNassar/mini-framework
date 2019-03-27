@@ -7,12 +7,10 @@
   },
   "autoload": {
     "classmap": [
-      "core",
-      "application"
+      "Core",
+      "App"
     ]
   },
   "require": {
-    "vlucas/valitron": "^1.4",
-    "guzzlehttp/guzzle": "^6.3"
   }
 }
